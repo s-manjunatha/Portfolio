@@ -44,7 +44,7 @@ export default function CareerObjective() {
               {/* Objective Text */}
               <div className="space-y-6 text-center md:text-left">
                 <blockquote className="text-lg md:text-xl font-medium text-foreground/90 leading-relaxed italic">
-                  "Seeking to leverage my academic foundations in Information Science & Engineering at REVA University, along with my emerging skills in Java, Python, and web development, to secure a collaborative development internship. I aim to contribute to building responsive, clean user interfaces while continuously strengthening my problem-solving skills in Data Structures & Algorithms."
+                  &quot;Seeking to leverage my academic foundations in Information Science &amp; Engineering at REVA University, along with my emerging skills in Java, Python, and web development, to secure a challenging role where I can contribute my technical expertise, learn from experienced professionals, and grow as a developer while delivering impactful solutions.&quot;
                 </blockquote>
 
                 {/* Sub-Focus Highlights */}
