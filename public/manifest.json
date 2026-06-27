@@ -1,0 +1,16 @@
+{
+  "name": "S Manjunatha Portfolio",
+  "short_name": "Manjunatha Portfolio",
+  "description": "B.Tech Student in Information Science and Engineering at REVA University. Aspiring Software Developer portfolio.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#09090b",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
