@@ -105,7 +105,7 @@ export default function Contact() {
           {/* Contact Details (Left Column) */}
           <div className="md:col-span-5 space-y-6">
             <h3 className="text-xl md:text-2xl font-extrabold text-foreground tracking-tight">
-              Let's Connect
+              Let&apos;s Connect
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
               If you have any opportunities for internship, student programs, or want to discuss a project, feel free to contact me.
