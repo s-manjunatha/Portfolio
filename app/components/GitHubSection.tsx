@@ -14,6 +14,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 
@@ -176,12 +177,12 @@ export default function GitHubSection() {
             <CardContent className="p-6 flex flex-col justify-between h-full space-y-6">
               <div className="flex items-center gap-4">
                 {/* Avatar */}
-                <div className="h-16 w-16 rounded-full overflow-hidden border border-border bg-secondary/50">
-                  <img
+                <div className="h-16 w-16 rounded-full overflow-hidden border border-border bg-secondary/50 relative">
+                  <Image
                     src={profile.avatar_url}
                     alt={profile.name}
+                    fill
                     className="h-full w-full object-cover"
-                    loading="lazy"
                   />
                 </div>
                 <div>
