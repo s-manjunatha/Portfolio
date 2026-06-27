@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { Award, Calendar, ExternalLink, ShieldCheck, ZoomIn, Info } from "lucide-react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Card, CardContent } from "./ui/card";
 import { Dialog } from "./ui/dialog";
 import { Button } from "./ui/button";
@@ -120,9 +121,10 @@ export default function Certifications() {
 
                     {/* Image Thumbnail Frame */}
                     <div className="aspect-[4/3] rounded-lg overflow-hidden border border-border bg-secondary/20 relative group-hover:border-foreground/20 transition-all duration-300">
-                      <img
+                      <Image
                         src={cert.imageUrl}
                         alt={cert.title}
+                        fill
                         className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-300"
                         loading="lazy"
                       />
@@ -167,16 +169,18 @@ export default function Certifications() {
 
             {/* Full Image Presentation */}
             <div className="border border-border/80 rounded-xl overflow-hidden bg-zinc-950 flex items-center justify-center p-1 md:p-2 max-h-[70vh]">
-              <img
+              <Image
                 src={selectedCert.imageUrl}
                 alt={selectedCert.title}
+                width={800}
+                height={600}
                 className="max-h-[65vh] w-auto object-contain mx-auto rounded"
               />
             </div>
 
             {/* Instruction Footer */}
             <div className="text-[10px] text-muted-foreground text-center">
-              Click the 'X' button or press Esc to close this preview.
+              Click the &apos;X&apos; button or press Esc to close this preview.
             </div>
           </div>
         )}
