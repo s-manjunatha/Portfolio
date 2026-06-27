@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { ArrowDown, Mail, Download, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Button } from "./ui/button";
 
 export default function Hero() {
@@ -112,7 +113,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-base md:text-lg text-muted-foreground/90 max-w-xl leading-relaxed"
           >
-            I am a B.Tech Information Science and Engineering student focused on building clean, high-performance web experiences and solidifying my fundamentals in Data Structures & Algorithms.
+            I am a B.Tech Information Science and Engineering student focused on building clean, high-performance web experiences and solidifying my fundamentals in Data Structures &amp; Algorithms.
           </motion.p>
 
           {/* Action CTAs */}
@@ -176,15 +177,16 @@ export default function Hero() {
             className="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl cursor-pointer group shadow-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-border"
           >
             {profileExists ? (
-              <img
+              <Image
                 src="/profile.jpg"
                 alt="S Manjunatha Profile"
+                fill
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
               />
             ) : (
               /* Fallback Initials / Design UI inside card */
               <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center select-none z-10 bg-background/30 dark:bg-background/20 backdrop-blur-[1px]">
-                <div className="h-16 w-16 rounded-full bg-secondary border border-border flex items-center justify-center text-xl font-bold mb-4 shadow-sm group-hover:scale-105 transition-transform duration-300">
+                <div className="h-16 w-16 rounded-full bg-secondary border border-border flex items-center justify-center text-xl font-bold mb-4 shadow-sm group-hover:scale-105 transition-transform">
                   SM
                 </div>
                 <h3 className="font-bold text-lg text-foreground">S Manjunatha</h3>
@@ -208,7 +210,7 @@ export default function Hero() {
       </div>
 
       {/* Down Arrow Scroll Indicator */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1.5 opacity-60 hover:opacity-100 transition-opacity cursor-pointer" onClick={() => scrollToSection("about")}>
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1.5 opacity-60 hover:opacity-100 transition-opacity cursor-pointer" onClick={() => scrollToSection("objective")}>
         <span className="text-[10px] uppercase tracking-wider font-semibold">Scroll</span>
         <motion.div
           animate={{ y: [0, 6, 0] }}
