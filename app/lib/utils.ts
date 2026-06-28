@@ -1,5 +1,4 @@
 import { type ClassValue, clsx } from "clsx";
-import { pureMerge } from "clsx"; // not using this, tailwind-merge is standard
 import { twMerge } from "tailwind-merge";
 
 /**
